@@ -4,7 +4,6 @@ import javax.swing.ImageIcon;
 public class Ball {
        //TODO  Find an archive named Ball.png 
 	private String Ball = "Ball.png"; 
-	private int fbgerg;
 	private double x,y,dx,dy;
 	private double v,fi;
 	private Image image;
