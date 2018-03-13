@@ -71,6 +71,7 @@ public class Billiards extends JFrame {
 
 				threads[i].start();
 
+			}
 		}
 	}
 
