@@ -35,8 +35,14 @@ public class Ball {
 		y += dy;
 		
 		reflect();
-		
 		//TODO Check postcondition
+		assert (x > Board.LEFTBOARD);
+		assert (x < Board.RIGHTBOARD);
+
+		assert (y < Board.BOTTOMBOARD);
+		assert (y > Board.TOPBOARD);
+		
+		
 	}
 
 	private void reflect() {
