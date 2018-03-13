@@ -13,7 +13,6 @@ public class Ball {
 		ImageIcon ii = new ImageIcon(this.getClass().getResource(Ball));
 		image = ii.getImage();
 		
-		
 		IMG_TAM_X = 95;
 		IMG_TAM_Y = 95;
 
