@@ -82,6 +82,26 @@ public class Billiards extends JFrame {
 
 		}
 	}
+	private Thread makeThread(final Ball ball) {
+		Runnable runloop = new Runnable() {
+			
+		
+			public void run() {
+				try {
+					while (true) {
+						ball.move();
+						board.repaint();
+						Thread.sleep(30);
+					}
+				} catch (InterruptedException e) {
+					return;
+				}
+			}
+		}
+		;
+		return new Thread(runloop);
+
+	}
 
 	public static void main(String[] args) {
 		new Billiards();
